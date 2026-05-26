@@ -1,0 +1,51 @@
+# ===== Unity 工程忽略项 =====
+# 这些是 Unity 自动生成的，不要提交进仓库
+
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+[Rr]ecordings/
+
+# Asset meta 数据要保留，但临时文件不要
+*.tmp
+*.unityproj
+*.svd
+*.userprefs
+
+# 编译产物
+*.pidb
+*.booproj
+*.suo
+*.user
+*.csproj
+*.sln
+*.apk
+*.aab
+*.unitypackage
+*.app
+
+# IDE
+.vs/
+.vscode/
+.idea/
+*.swp
+
+# 操作系统
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Crash 日志
+sysinfo.txt
+crashlog.txt
+
+# ===== 项目专用 =====
+# 个人密钥 / 不要泄露的东西
+*.keystore
+secrets.txt
+.env
