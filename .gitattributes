@@ -1,6 +1,7 @@
-# ===== Git LFS 配置 =====
-# 大文件用 LFS 管理，避免仓库膨胀
-# 使用前需要先安装 Git LFS 并运行： git lfs install
+# ===== Git LFS 配置（Godot 项目）=====
+# 注意：Godot 工程通常比 Unity 轻，早期资源不多时可以先不启用 LFS。
+# 若决定不用 LFS，可整段删除本文件的 LFS 部分。
+# 启用前需先安装 Git LFS 并运行： git lfs install
 
 # 图片
 *.png filter=lfs diff=lfs merge=lfs -text
@@ -23,18 +24,19 @@
 # 3D 模型
 *.fbx filter=lfs diff=lfs merge=lfs -text
 *.obj filter=lfs diff=lfs merge=lfs -text
+*.glb filter=lfs diff=lfs merge=lfs -text
+*.gltf filter=lfs diff=lfs merge=lfs -text
 *.blend filter=lfs diff=lfs merge=lfs -text
-
-# Unity 资源
-*.unity filter=lfs diff=lfs merge=lfs -text
-*.anim filter=lfs diff=lfs merge=lfs -text
-*.asset filter=lfs diff=lfs merge=lfs -text
 
 # 文档大文件
 *.pdf filter=lfs diff=lfs merge=lfs -text
 *.pptx filter=lfs diff=lfs merge=lfs -text
 
 # ===== 文本文件强制 LF 换行，避免跨平台冲突 =====
-*.md text eol=lf
-*.cs text eol=lf
+# 注意：Godot 的 .tscn / .tres / .gd 都是文本，统一 LF 能减少 diff 噪音
+*.md   text eol=lf
+*.gd   text eol=lf
+*.tscn text eol=lf
+*.tres text eol=lf
+*.cfg  text eol=lf
 *.json text eol=lf

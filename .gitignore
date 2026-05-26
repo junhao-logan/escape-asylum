@@ -1,33 +1,27 @@
-# ===== Unity 工程忽略项 =====
-# 这些是 Unity 自动生成的，不要提交进仓库
+# ===== Godot 4 工程忽略项 =====
+# 这些是 Godot 自动生成的，不要提交进仓库
 
-[Ll]ibrary/
-[Tt]emp/
-[Oo]bj/
-[Bb]uild/
-[Bb]uilds/
-[Ll]ogs/
-[Uu]ser[Ss]ettings/
-[Mm]emoryCaptures/
-[Rr]ecordings/
+# Godot 4 的缓存与导入数据目录
+.godot/
 
-# Asset meta 数据要保留，但临时文件不要
-*.tmp
-*.unityproj
-*.svd
-*.userprefs
+# 旧版 Godot 3 的导入缓存（若用 Godot 3 才需要）
+.import/
 
-# 编译产物
-*.pidb
-*.booproj
-*.suo
-*.user
-*.csproj
-*.sln
-*.apk
-*.aab
-*.unitypackage
-*.app
+# 导出产物
+export/
+build/
+builds/
+*.exe
+*.pck
+*.zip
+
+# 导出预设里可能含密钥，不要提交
+export_presets.cfg
+
+# Mono / C# 用户才会有（用 GDScript 可忽略此段）
+.mono/
+data_*/
+mono_crash.*.json
 
 # IDE
 .vs/
@@ -39,10 +33,6 @@
 .DS_Store
 Thumbs.db
 desktop.ini
-
-# Crash 日志
-sysinfo.txt
-crashlog.txt
 
 # ===== 项目专用 =====
 # 个人密钥 / 不要泄露的东西

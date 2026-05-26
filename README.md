@@ -7,7 +7,7 @@
 
 ## 这是什么
 
-本仓库是《潜逃收容所》的**项目主仓库**，存放设计文档、开发进度、投资材料和 Unity 工程。
+本仓库是《潜逃收容所》的**项目主仓库**，存放设计文档、开发进度、投资材料和 Godot 工程。
 团队 6 人，当前阶段目标：**做出一个可玩的 Vertical Slice，用于对外展示与融资**。
 
 ## 新人从这里开始
@@ -15,7 +15,7 @@
 1. 读本文件，了解仓库怎么组织。
 2. 读 `claude-context/项目上下文_精简版.md`，10 分钟了解整个游戏。
 3. 看 `progress/路线图.md` 和 `progress/进度看板.md`，了解现在做到哪、你该做什么。
-4. 程序同学另外看 `unity-project/README.md`。
+4. 程序同学另外看 `godot-project/README.md`。
 
 ## 目录说明
 
@@ -27,14 +27,14 @@
 | `progress/` | 路线图、进度看板、周报、会议记录 | 全员 |
 | `pitch/` | 给投资人的简介、Slice 说明、Demo 资料 | 宣发 |
 | `claude-context/` | 专门给 AI（Claude Project）上传的精简上下文 | 主策划 |
-| `unity-project/` | Unity 工程本体 | 程序团队 |
+| `godot-project/` | Godot 工程本体 | 程序团队 |
 
 ## 协作约定
 
 - **文档一律用 Markdown（.md）**：方便版本对比、在线预览、上传到 Claude Project。
 - **改文档前先 `git pull`**，避免冲突；改完写清楚改了什么。
-- **大文件（美术资源、视频、Unity 资源）走 Git LFS**，见 `.gitattributes`。
-- **不要把以下东西提交进仓库**：Unity 的 `Library/`、`Temp/`、临时文件、个人密钥。`.gitignore` 已配置。
+- **大文件（美术资源、视频、音频）走 Git LFS**，见 `.gitattributes`。Godot 项目早期资源不多时也可暂不启用 LFS。
+- **不要把以下东西提交进仓库**：Godot 的 `.godot/` 缓存目录、导出产物、临时文件、个人密钥。`.gitignore` 已配置。
 - **不确定就问**，不要默默改大结构。
 
 ## 分支约定（建议）
